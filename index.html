@@ -34,7 +34,7 @@
     </header>
     <main>
       <div class="build-container">
-        <div class="item-slot helmet-slot">
+        <div data-slot="helmet" class="item-slot helmet-slot">
           <div class="spinner hidden"></div>
           <div class="item-lock hidden">
             <svg
@@ -57,8 +57,8 @@
             height="2.2em"
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 32 32"
-            class="add-icon"
-            data-type="helmet"
+            class="filter-icon"
+            data-slot="helmet"
           >
             <path
               fill="currentColor"
@@ -66,7 +66,7 @@
             />
           </svg>
         </div>
-        <div class="item-slot armor-slot">
+        <div data-slot="armor" class="item-slot armor-slot">
           <div class="spinner hidden"></div>
           <div class="item-lock hidden">
             <svg
@@ -87,8 +87,8 @@
             xmlns="http://www.w3.org/2000/svg"
             width="2em"
             height="2.2em"
-            class="add-icon"
-            data-type="armor"
+            class="filter-icon"
+            data-slot="armor"
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 32 32"
           >
@@ -98,7 +98,7 @@
             />
           </svg>
         </div>
-        <div class="item-slot shoe-slot">
+        <div data-slot="shoe" class="item-slot shoe-slot">
           <div class="spinner hidden"></div>
           <div class="item-lock hidden">
             <svg
@@ -119,8 +119,8 @@
             xmlns="http://www.w3.org/2000/svg"
             width="2em"
             height="2.2em"
-            class="add-icon"
-            data-type="shoe"
+            class="filter-icon"
+            data-slot="shoe"
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 32 32"
           >
@@ -130,7 +130,7 @@
             />
           </svg>
         </div>
-        <div class="item-slot main-hand-slot">
+        <div data-slot="weapon" class="item-slot main-hand-slot">
           <div class="spinner hidden"></div>
           <div class="item-lock hidden">
             <svg
@@ -151,8 +151,8 @@
             xmlns="http://www.w3.org/2000/svg"
             width="2em"
             height="2.2em"
-            class="add-icon"
-            data-type="weapon"
+            class="filter-icon"
+            data-slot="weapon"
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 32 32"
           >
@@ -162,7 +162,7 @@
             />
           </svg>
         </div>
-        <div class="item-slot offhand-slot">
+        <div data-slot="offhand" class="item-slot offhand-slot">
           <div class="spinner hidden"></div>
           <div class="item-lock hidden">
             <svg
@@ -183,8 +183,8 @@
             xmlns="http://www.w3.org/2000/svg"
             width="2em"
             height="2.2em"
-            class="add-icon"
-            data-type="offhand"
+            class="filter-icon"
+            data-slot="offhand"
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 32 32"
           >
@@ -194,7 +194,7 @@
             />
           </svg>
         </div>
-        <div class="item-slot cape-slot">
+        <div data-slot="cape" class="item-slot cape-slot">
           <div class="spinner hidden"></div>
           <div class="item-lock hidden">
             <svg
@@ -215,8 +215,8 @@
             xmlns="http://www.w3.org/2000/svg"
             width="2em"
             height="2.2em"
-            class="add-icon"
-            data-type="cape"
+            class="filter-icon"
+            data-slot="cape"
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 32 32"
           >
@@ -344,7 +344,7 @@
         </button>
       </div>
       <p id="notification"></p>
-      <section class="options__container">
+      <section class="filter-options__container">
         <h3 id="filter-menu__title" class="heading__secondary">
           Filter Options
         </h3>
@@ -386,478 +386,1980 @@
             </svg>
           </button>
         </div>
-        <div class="" id="filter-menu">
+        <div id="filter-menu">
           <div
-            class="options__form options--success remove"
-            data-type="weapon"
+            class="filter-options__form filter-options--success remove"
+            data-slot="weapon"
             data-status="checked"
           >
-            <h3 class="options__heading">Weapon</h3>
-            <button
-              class="btn__filter btn--shade"
-              data-state="unchecked"
-              data-type="weapon"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 1024 1024"
+            <h3 class="filter-options__heading">Weapon</h3>
+            <div class="select__container">
+              <button
+                class="btn__filter btn--shade btn__filter-none"
+                data-state="unchecked"
+                data-slot="weapon"
               >
-                <path
-                  fill="currentColor"
-                  d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
-                ></path>
-              </svg>
-            </button>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="arcane staff"
-                id="arcane staff"
-              />
-              <label for="arcane staff">Arcane Staff</label>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn__filter btn--shade btn__filter-all"
+                data-state="unchecked"
+                data-slot="weapon"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </button>
             </div>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="axe"
-                id="axe"
-              />
-              <label for="axe">Axe</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="arcane staff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="arcane staff">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="arcane staff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  data-category="arcane staff"
+                  class="label__more"
+                  data-slot="weapon"
+                  for="arcane staff"
+                  >Arcane Staff</label
+                >
+              </div>
             </div>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="bow"
-                id="bow"
-              />
-              <label for="bow">Bow</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="axe"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="axe">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="axe"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="axe"
+                  for="axe"
+                  >Axe</label
+                >
+              </div>
             </div>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="cursed staff"
-                id="cursed staff"
-              />
-              <label for="cursed staff">Cursed Staff</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="bow"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="bow">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="bow"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="bow"
+                  for="bow"
+                  >Bow</label
+                >
+              </div>
             </div>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="crossbow"
-                id="crossbow"
-              />
-              <label for="crossbow">Crossbow</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="cursed staff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="cursed staff">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="cursed staff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="cursed staff"
+                  for="cursed staff"
+                  >Cursed Staff</label
+                >
+              </div>
             </div>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="dagger"
-                id="dagger"
-              />
-              <label for="dagger">Dagger</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="crossbow"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="crossbow">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="crossbow"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="crossbow"
+                  for="crossbow"
+                  >Crossbow</label
+                >
+              </div>
             </div>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="fire staff"
-                id="fire staff"
-              />
-              <label for="fire staff">Fire Staff</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="dagger"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="dagger">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="dagger"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="dagger"
+                  for="dagger"
+                  >Dagger</label
+                >
+              </div>
             </div>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="frost staff"
-                id="frost staff"
-              />
-              <label for="frost staff">Frost Staff</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="fire staff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="fire staff">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="fire staff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="fire staff"
+                  for="fire staff"
+                  >Fire Staff</label
+                >
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="frost staff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="frost staff">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="frost staff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="frost staff"
+                  for="frost staff"
+                  >Frost Staff</label
+                >
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="hammer"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+
+                <p class="item-type__stats" data-mastery="hammer">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="hammer"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="hammer"
+                  for="hammer"
+                  >Hammer</label
+                >
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="holy staff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="holy staff">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="holy staff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="holy staff"
+                  for="holy staff"
+                  >Holy Staff</label
+                >
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="mace"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="mace">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="mace"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="mace"
+                  for="mace"
+                  >Mace</label
+                >
+              </div>
             </div>
 
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="hammer"
-                id="hammer"
-              />
-              <label for="hammer">Hammer</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="nature staff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="nature staff">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="nature staff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="nature staff"
+                  for="nature staff"
+                  >Nature Staff</label
+                >
+              </div>
             </div>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="holy staff"
-                id="holy staff"
-              />
-              <label for="holy staff">Holy Staff</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="quarterstaff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="quarterstaff">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="quarterstaff"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="quarterstaff"
+                  for="quarterstaff"
+                  >Quarterstaff</label
+                >
+              </div>
             </div>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="mace"
-                id="mace"
-              />
-              <label for="mace">Mace</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="spear"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="spear">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="spear"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="spear"
+                  for="spear"
+                  >Spear</label
+                >
+              </div>
             </div>
-
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="nature staff"
-                id="nature staff"
-              />
-              <label for="nature staff">Nature Staff</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="sword"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="sword">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="sword"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="sword"
+                  for="sword"
+                  >Sword</label
+                >
+              </div>
             </div>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="quarterstaff"
-                id="quarterstaff"
-              />
-              <label for="quarterstaff">Quarterstaff</label>
-            </div>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="spear"
-                id="spear"
-              />
-              <label for="spear">Spear</label>
-            </div>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="sword"
-                id="sword"
-              />
-              <label for="sword">Sword</label>
-            </div>
-            <div class="item-type__container">
-              <input
-                data-type="weapon"
-                class="weapon item-type"
-                type="checkbox"
-                name="war gloves"
-                id="war gloves"
-              />
-              <label for="war gloves">War Gloves</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="war gloves"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="war gloves">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="war gloves"
+                  data-slot="weapon"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="weapon"
+                  data-category="war gloves"
+                  for="war gloves"
+                  >War Gloves</label
+                >
+              </div>
             </div>
           </div>
 
           <div
-            class="options__form options--success remove"
-            data-type="offhand"
+            class="filter-options__form filter-options--success remove"
+            data-slot="offhand"
           >
-            <h3 class="options__heading">Off-hand</h3>
-            <button
-              class="btn__filter btn--shade"
-              data-state="unchecked"
-              data-type="offhand"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 1024 1024"
+            <h3 class="filter-options__heading">Off-hand</h3>
+            <div class="select__container">
+              <button
+                class="btn__filter btn--shade btn__filter-none"
+                data-state="unchecked"
+                data-slot="offhand"
               >
-                <path
-                  fill="currentColor"
-                  d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
-                ></path>
-              </svg>
-            </button>
-            <div class="item-type__container">
-              <input
-                data-type="offhand"
-                class="offhand item-type"
-                type="checkbox"
-                name="tome"
-                id="tome"
-              />
-              <label for="tome">Tome</label>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn__filter btn--shade btn__filter-all"
+                data-state="unchecked"
+                data-slot="offhand"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </button>
             </div>
-            <div class="item-type__container">
-              <input
-                data-type="offhand"
-                class="offhand item-type"
-                type="checkbox"
-                name="torch"
-                id="torch"
-              />
-              <label for="torch">Torch</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="tome"
+                  data-slot="offhand"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+                <p class="item-type__stats" data-mastery="tome">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+                <button
+                  data-category="tome"
+                  data-slot="offhand"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="offhand"
+                  data-category="tome"
+                  for="tome"
+                  >Tome</label
+                >
+              </div>
             </div>
-            <div class="item-type__container">
-              <input
-                data-type="offhand"
-                class="offhand item-type"
-                type="checkbox"
-                name="shield"
-                id="shield"
-              />
-              <label for="shield">Shield</label>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="torch"
+                  data-slot="offhand"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+
+                <p class="item-type__stats" data-mastery="torch">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+
+                <button
+                  data-category="torch"
+                  data-slot="offhand"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="offhand"
+                  data-category="torch"
+                  for="torch"
+                  >Torch</label
+                >
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="item-type__container">
+                <button
+                  data-category="shield"
+                  data-slot="offhand"
+                  class="btn__select btn--shade select__none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                    />
+                  </svg>
+                </button>
+
+                <p class="item-type__stats" data-mastery="shield">
+                  <span class="current"> / </span><span class="total"></span>
+                </p>
+
+                <button
+                  data-category="shield"
+                  data-slot="offhand"
+                  class="btn__select btn--shade select__all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="label__more"
+                  data-slot="offhand"
+                  data-category="shield"
+                  for="shield"
+                  >Shield</label
+                >
+              </div>
             </div>
           </div>
-          <div class="options__form options--success remove" data-type="helmet">
-            <h3 class="options__heading">Helmet</h3>
-            <button
-              class="btn__filter btn--shade"
-              data-state="unchecked"
-              data-type="helmet"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 1024 1024"
+          <div
+            class="filter-options__form filter-options--success remove"
+            data-slot="helmet"
+          >
+            <h3 class="filter-options__heading">Helmet</h3>
+            <div class="select__container">
+              <button
+                class="btn__filter btn--shade btn__filter-none"
+                data-state="unchecked"
+                data-slot="helmet"
               >
-                <path
-                  fill="currentColor"
-                  d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
-                ></path>
-              </svg>
-            </button>
-            <div class="item-type__container">
-              <input
-                data-type="helmet"
-                class="helmet item-type"
-                type="checkbox"
-                name="cloth cowl"
-                id="cloth cowl"
-              />
-              <label for="cloth cowl">Cloth Cowl</label>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn__filter btn--shade btn__filter-all"
+                data-state="unchecked"
+                data-slot="helmet"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </button>
             </div>
             <div class="item-type__container">
-              <input
-                data-type="helmet"
-                class="helmet item-type"
-                type="checkbox"
-                name="leather hood"
-                id="leather hood"
-              />
-              <label for="leather hood">Leather Hood</label>
+              <button
+                data-category="cloth cowl"
+                data-slot="helmet"
+                class="btn__select btn--shade select__none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+
+              <p class="item-type__stats" data-mastery="cloth cowl">
+                <span class="current"> / </span><span class="total"></span>
+              </p>
+
+              <button
+                data-category="cloth cowl"
+                data-slot="helmet"
+                class="btn__select btn--shade select__all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  />
+                </svg>
+              </button>
+              <label
+                class="label__more"
+                data-slot="helmet"
+                data-category="cloth cowl"
+                for="cloth cowl"
+                >Cloth Cowl</label
+              >
             </div>
             <div class="item-type__container">
-              <input
-                data-type="helmet"
-                class="helmet item-type"
-                type="checkbox"
-                name="plate helmet"
-                id="plate helmet"
-              />
-              <label for="plate helmet">Plate Helmet</label>
+              <button
+                data-category="leather hood"
+                data-slot="helmet"
+                class="btn__select btn--shade select__none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+
+              <p class="item-type__stats" data-mastery="leather hood">
+                <span class="current"> / </span><span class="total"></span>
+              </p>
+
+              <button
+                data-category="leather hood"
+                data-slot="helmet"
+                class="btn__select btn--shade select__all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  />
+                </svg>
+              </button>
+              <label
+                class="label__more"
+                data-slot="helmet"
+                data-category="leather hood"
+                for="leather hood"
+                >Leather Hood</label
+              >
+            </div>
+            <div class="item-type__container">
+              <button
+                data-category="plate helmet"
+                data-slot="helmet"
+                class="btn__select btn--shade select__none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+
+              <p class="item-type__stats" data-mastery="plate helmet">
+                <span class="current"> / </span><span class="total"></span>
+              </p>
+
+              <button
+                data-category="plate helmet"
+                data-slot="helmet"
+                class="btn__select btn--shade select__all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  />
+                </svg>
+              </button>
+              <label
+                class="label__more"
+                data-slot="helmet"
+                data-category="plate helmet"
+                for="plate helmet"
+                >Plate Helmet</label
+              >
             </div>
           </div>
-          <div class="options__form options--success remove" data-type="armor">
-            <h3 class="options__heading">Armor</h3>
-            <button
-              class="btn__filter btn--shade"
-              data-state="unchecked"
-              data-type="armor"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 1024 1024"
+          <div
+            class="filter-options__form filter-options--success remove"
+            data-slot="armor"
+          >
+            <h3 class="filter-options__heading">Armor</h3>
+            <div class="select__container">
+              <button
+                class="btn__filter btn--shade btn__filter-none"
+                data-state="unchecked"
+                data-slot="armor"
               >
-                <path
-                  fill="currentColor"
-                  d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
-                ></path>
-              </svg>
-            </button>
-            <div class="item-type__container">
-              <input
-                data-type="armor"
-                class="armor item-type"
-                type="checkbox"
-                name="cloth robe"
-                id="cloth robe"
-              />
-              <label for="cloth robe">Cloth Robe</label>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn__filter btn--shade btn__filter-all"
+                data-state="unchecked"
+                data-slot="armor"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </button>
             </div>
             <div class="item-type__container">
-              <input
-                data-type="armor"
-                class="armor item-type"
-                type="checkbox"
-                name="leather jacket"
-                id="leather jacket"
-              />
-              <label for="leather jacket">Leather Jacket</label>
+              <button
+                data-category="cloth robe"
+                data-slot="armor"
+                class="btn__select btn--shade select__none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+
+              <p class="item-type__stats" data-mastery="cloth robe">
+                <span class="current"> / </span><span class="total"></span>
+              </p>
+
+              <button
+                data-category="cloth robe"
+                data-slot="armor"
+                class="btn__select btn--shade select__all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  />
+                </svg>
+              </button>
+              <label
+                class="label__more"
+                data-slot="armor"
+                data-category="cloth robe"
+                for="cloth robe"
+                >Cloth Robe</label
+              >
             </div>
             <div class="item-type__container">
-              <input
-                data-type="armor"
-                class="armor item-type"
-                type="checkbox"
-                name="plate armor"
-                id="plate armor"
-              />
-              <label for="plate armor">Plate Armor</label>
+              <button
+                data-category="leather jacket"
+                data-slot="armor"
+                class="btn__select btn--shade select__none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+
+              <p class="item-type__stats" data-mastery="leather jacket">
+                <span class="current"> / </span><span class="total"></span>
+              </p>
+
+              <button
+                data-category="leather jacket"
+                data-slot="armor"
+                class="btn__select btn--shade select__all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  />
+                </svg>
+              </button>
+              <label
+                class="label__more"
+                data-slot="armor"
+                data-category="leather jacket"
+                for="leather jacket"
+                >Leather Jacket</label
+              >
+            </div>
+            <div class="item-type__container">
+              <button
+                data-category="plate armor"
+                data-slot="armor"
+                class="btn__select btn--shade select__none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+
+              <p class="item-type__stats" data-mastery="plate armor">
+                <span class="current"> / </span><span class="total"></span>
+              </p>
+
+              <button
+                data-category="plate armor"
+                data-slot="armor"
+                class="btn__select btn--shade select__all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  />
+                </svg>
+              </button>
+              <label
+                class="label__more"
+                data-slot="armor"
+                data-category="plate armor"
+                for="plate armor"
+                >Plate Armor</label
+              >
             </div>
           </div>
-          <div class="options__form options--success remove" data-type="shoe">
-            <h3 class="options__heading">Shoes</h3>
-            <button
-              class="btn__filter btn--shade"
-              data-state="unchecked"
-              data-type="shoe"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 1024 1024"
+          <div
+            class="filter-options__form filter-options--success remove"
+            data-slot="shoe"
+          >
+            <h3 class="filter-options__heading">Shoes</h3>
+            <div class="select__container">
+              <button
+                class="btn__filter btn--shade btn__filter-none"
+                data-state="unchecked"
+                data-slot="shoe"
               >
-                <path
-                  fill="currentColor"
-                  d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
-                ></path>
-              </svg>
-            </button>
-            <div class="item-type__container">
-              <input
-                data-type="shoe"
-                class="shoe item-type"
-                type="checkbox"
-                name="cloth sandals"
-                id="cloth sandals"
-              />
-              <label for="cloth sandals">Cloth Sandals</label>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn__filter btn--shade btn__filter-all"
+                data-state="unchecked"
+                data-slot="shoe"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </button>
             </div>
             <div class="item-type__container">
-              <input
-                data-type="shoe"
-                class="shoe item-type"
-                type="checkbox"
-                name="leather shoes"
-                id="leather shoes"
-              />
-              <label for="leather shoes">Leather Shoes</label>
+              <button
+                data-category="cloth sandals"
+                data-slot="shoe"
+                class="btn__select btn--shade select__none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+
+              <p class="item-type__stats" data-mastery="cloth sandals">
+                <span class="current"> / </span><span class="total"></span>
+              </p>
+
+              <button
+                data-category="cloth sandals"
+                data-slot="shoe"
+                class="btn__select btn--shade select__all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  />
+                </svg>
+              </button>
+              <label
+                class="label__more"
+                data-slot="shoe"
+                data-category="cloth sandals"
+                for="cloth sandals"
+                >Cloth Sandals</label
+              >
             </div>
             <div class="item-type__container">
-              <input
-                data-type="shoe"
-                class="shoe item-type"
-                type="checkbox"
-                name="plate boots"
-                id="plate boots"
-              />
-              <label for="plate boots">Plate Boots</label>
+              <button
+                data-category="leather shoes"
+                data-slot="shoe"
+                class="btn__select btn--shade select__none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+
+              <p class="item-type__stats" data-mastery="leather shoes">
+                <span class="current"> / </span><span class="total"></span>
+              </p>
+
+              <button
+                data-category="leather shoes"
+                data-slot="shoe"
+                class="btn__select btn--shade select__all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  />
+                </svg>
+              </button>
+              <label
+                class="label__more"
+                data-slot="shoe"
+                data-category="leather shoes"
+                for="leather shoes"
+                >Leather Shoes</label
+              >
+            </div>
+            <div class="item-type__container">
+              <button
+                data-category="plate boots"
+                data-slot="shoe"
+                class="btn__select btn--shade select__none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+
+              <p class="item-type__stats" data-mastery="plate boots">
+                <span class="current"> / </span><span class="total"></span>
+              </p>
+
+              <button
+                data-category="plate boots"
+                data-slot="shoe"
+                class="btn__select btn--shade select__all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  />
+                </svg>
+              </button>
+              <label
+                class="label__more"
+                data-slot="shoe"
+                data-category="plate boots"
+                for="plate boots"
+                >Plate Boots</label
+              >
             </div>
           </div>
-          <div class="options__form options--success remove" data-type="cape">
-            <h3 class="options__heading">Cape</h3>
-            <button
-              class="btn__filter btn--shade"
-              data-state="unchecked"
-              data-type="cape"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 1024 1024"
+          <div
+            class="filter-options__form filter-options--success remove"
+            data-slot="cape"
+          >
+            <h3 class="filter-options__heading">Cape</h3>
+            <div class="select__container">
+              <button
+                class="btn__filter btn--shade btn__filter-none"
+                data-state="unchecked"
+                data-slot="cape"
               >
-                <path
-                  fill="currentColor"
-                  d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
-                ></path>
-                <path
-                  fill="currentColor"
-                  d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
-                ></path>
-              </svg>
-            </button>
-            <div class="item-type__container">
-              <input
-                data-type="cape"
-                class="cape item-type"
-                type="checkbox"
-                name="cape"
-                id="cape"
-              />
-              <label for="cape">Cape</label>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn__filter btn--shade btn__filter-all"
+                data-state="unchecked"
+                data-slot="cape"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  ></path>
+                </svg>
+              </button>
             </div>
             <div class="item-type__container">
-              <input
-                data-type="cape"
-                class="cape item-type"
-                type="checkbox"
-                name="city faction cape"
-                id="city faction cape"
-              />
-              <label for="city faction cape">City Faction Cape</label>
+              <button
+                data-category="cape"
+                data-slot="cape"
+                class="btn__select btn--shade select__none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+
+              <p class="item-type__stats" data-mastery="cape">
+                <span class="current"> / </span><span class="total"></span>
+              </p>
+
+              <button
+                data-category="cape"
+                data-slot="cape"
+                class="btn__select btn--shade select__all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  />
+                </svg>
+              </button>
+              <label
+                class="label__more"
+                data-slot="cape"
+                data-category="cape"
+                for="cape"
+                >Cape</label
+              >
             </div>
             <div class="item-type__container">
-              <input
-                data-type="cape"
-                class="cape item-type"
-                type="checkbox"
-                name="mob faction cape"
-                id="mob faction cape"
-              />
-              <label for="mob faction cape">Mob Faction Cape</label>
+              <button
+                data-category="city faction cape"
+                data-slot="cape"
+                class="btn__select btn--shade select__none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+
+              <p class="item-type__stats" data-mastery="city faction cape">
+                <span class="current"> / </span><span class="total"></span>
+              </p>
+
+              <button
+                data-category="city faction cape"
+                data-slot="cape"
+                class="btn__select btn--shade select__all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  />
+                </svg>
+              </button>
+              <label
+                class="label__more"
+                data-slot="cape"
+                data-category="city faction cape"
+                for="city faction cape"
+                >City Faction</label
+              >
+            </div>
+            <div class="item-type__container">
+              <button
+                data-category="mob faction cape"
+                data-slot="cape"
+                class="btn__select btn--shade select__none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+                  />
+                </svg>
+              </button>
+
+              <p class="item-type__stats" data-mastery="mob faction cape">
+                <span class="current"> / </span><span class="total"></span>
+              </p>
+
+              <button
+                data-category="mob faction cape"
+                data-slot="cape"
+                class="btn__select btn--shade select__all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
+                  />
+                </svg>
+              </button>
+              <label
+                class="label__more"
+                data-slot="cape"
+                data-category="mob faction cape"
+                for="mob faction cape"
+                >Mob Faction</label
+              >
             </div>
           </div>
         </div>
+        <h4 class="notification__confirmation hidden">...</h4>
+        <div class="test filter-options__items filter-options--tint"></div>
       </section>
     </main>
     <footer></footer>
