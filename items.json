@@ -1,1491 +1,1748 @@
 {
   "weapon": [
     {
-      "id": 1,
+      "id": "w1",
       "name": "Battleaxe",
       "image": "MAIN_AXE",
-      "type": "1H",
-      "category": "axe"
+      "type": "weapon",
+      "require": "1H",
+      "category": "axe",
+      "usage": "CD"
     },
     {
-      "id": 2,
+      "id": "w2",
       "name": "Greataxe",
       "image": "2H_AXE",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "axe"
     },
     {
-      "id": 3,
+      "id": "w3",
       "name": "Halberd",
       "image": "2H_HALBERD",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "axe"
     },
     {
-      "id": 4,
+      "id": "w4",
       "name": "Carioncaller",
       "image": "2H_HALBERD_MORGANA",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "axe"
     },
     {
-      "id": 5,
+      "id": "w5",
       "name": "Infernal Scythe",
       "image": "2H_SCYTHE_HELL",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "axe"
     },
     {
-      "id": 6,
+      "id": "w6",
       "name": "Bear Paws",
       "image": "2H_DUALAXE_KEEPER",
-      "type": "2H",
-      "category": "axe"
+      "type": "weapon",
+      "require": "2H",
+      "category": "axe",
+      "usage": "CD"
     },
     {
-      "id": 7,
+      "id": "w7",
       "name": "Realmbreaker",
       "image": "2H_AXE_AVALON",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "axe"
     },
     {
-      "id": 8,
+      "id": "w8",
       "name": "Bow",
       "image": "2H_BOW",
-      "type": "2H",
-      "category": "bow"
+      "type": "weapon",
+      "require": "2H",
+      "category": "bow",
+      "usage": "CD"
     },
     {
-      "id": 9,
+      "id": "w9",
       "name": "Longbow",
       "image": "2H_LONGBOW",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "bow"
     },
     {
-      "id": 10,
+      "id": "w10",
       "name": "Warbow",
       "image": "2H_WARBOW",
-      "type": "2H",
-      "category": "bow"
+      "type": "weapon",
+      "require": "2H",
+      "category": "bow",
+      "usage": "CD"
     },
     {
-      "id": 11,
+      "id": "w11",
       "name": "Whispering Bow",
       "image": "2H_LONGBOW_UNDEAD",
-      "type": "2H",
-      "category": "bow"
+      "type": "weapon",
+      "require": "2H",
+      "category": "bow",
+      "usage": "CD"
     },
     {
-      "id": 12,
+      "id": "w12",
       "name": "Wailing Bow",
       "image": "2H_BOW_HELL",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "bow"
     },
     {
-      "id": 13,
+      "id": "w13",
       "name": "Bow of Badon",
       "image": "2H_BOW_KEEPER",
-      "type": "2H",
-      "category": "bow"
+      "type": "weapon",
+      "require": "2H",
+      "category": "bow",
+      "usage": "CD"
     },
     {
-      "id": 14,
+      "id": "w14",
       "name": "Mistpiercer",
       "image": "2H_BOW_AVALON",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "bow"
     },
     {
-      "id": 15,
+      "id": "w15",
       "name": "Crossbow",
       "image": "2H_CROSSBOW",
-      "type": "2H",
-      "category": "crossbow"
+      "type": "weapon",
+      "require": "2H",
+      "category": "crossbow",
+      "usage": "CD"
     },
     {
-      "id": 16,
+      "id": "w16",
       "name": "Heavy Crossbow",
       "image": "2H_CROSSBOWLARGE",
-      "type": "2H",
-      "category": "crossbow"
+      "type": "weapon",
+      "require": "2H",
+      "category": "crossbow",
+      "usage": "CD"
     },
     {
-      "id": 17,
+      "id": "w17",
       "name": "Light Crossbow",
       "image": "MAIN_1HCROSSBOW",
-      "type": "1H",
-      "category": "crossbow"
+      "type": "weapon",
+      "require": "1H",
+      "category": "crossbow",
+      "usage": "CD"
     },
     {
-      "id": 18,
+      "id": "w18",
       "name": "Weeping Repeater",
       "image": "2H_REPEATINGCROSSBOW_UNDEAD",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "crossbow"
     },
     {
-      "id": 19,
+      "id": "w19",
       "name": "Boltcasters",
       "image": "2H_DUALCROSSBOW_HELL",
-      "type": "2H",
-      "category": "crossbow"
+      "type": "weapon",
+      "require": "2H",
+      "category": "crossbow",
+      "usage": "CD"
     },
     {
-      "id": 20,
+      "id": "w20",
       "name": "Siegebow",
       "image": "2H_CROSSBOWLARGE_MORGANA",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "crossbow"
     },
     {
-      "id": 21,
+      "id": "w21",
       "name": "Energy Shaper",
       "image": "2H_CROSSBOW_CANNON_AVALON",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "crossbow"
     },
     {
-      "id": 22,
+      "id": "w22",
       "name": "Arcane Staff",
       "image": "MAIN_ARCANESTAFF",
-      "type": "1H",
-      "category": "arcane staff"
+      "type": "weapon",
+      "require": "1H",
+      "category": "arcane staff",
+      "usage": "CD"
     },
     {
-      "id": 23,
+      "id": "w23",
       "name": "Great Arcane Staff",
       "image": "2H_ARCANESTAFF",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "arcane staff"
     },
     {
-      "id": 24,
+      "id": "w24",
       "name": "Enigmatic Staff",
       "image": "2H_ENIGMATICSTAFF",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "arcane staff"
     },
     {
-      "id": 25,
+      "id": "w25",
       "name": "Witchwork Staff",
       "image": "MAIN_ARCANESTAFF_UNDEAD",
-      "type": "1H",
+      "type": "weapon",
+      "require": "1H",
       "category": "arcane staff"
     },
     {
-      "id": 26,
+      "id": "w26",
       "name": "Occult Staff",
       "image": "2H_ARCANESTAFF_HELL",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "arcane staff"
     },
     {
-      "id": 27,
+      "id": "w27",
       "name": "Malevolent Locus",
       "image": "2H_ENIGMATICORB_MORGANA",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "arcane staff"
     },
     {
-      "id": 28,
+      "id": "w28",
       "name": "Evensong",
       "image": "2H_ARCANE_RINGPAIR_AVALON",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "arcane staff"
     },
     {
-      "id": 29,
+      "id": "w29",
       "name": "Fire Staff",
       "image": "MAIN_FIRESTAFF",
-      "type": "1H",
-      "category": "fire staff"
+      "type": "weapon",
+      "require": "1H",
+      "category": "fire staff",
+      "usage": "CD"
     },
     {
-      "id": 30,
+      "id": "w30",
       "name": "Great Fire Staff",
       "image": "2H_FIRESTAFF",
-      "type": "2H",
-      "category": "fire staff"
+      "type": "weapon",
+      "require": "2H",
+      "category": "fire staff",
+      "usage": "CD"
     },
     {
-      "id": 31,
+      "id": "w31",
       "name": "Infernal Staff",
       "image": "2H_INFERNOSTAFF",
-      "type": "2H",
-      "category": "fire staff"
+      "type": "weapon",
+      "require": "2H",
+      "category": "fire staff",
+      "usage": "CD"
     },
     {
-      "id": 32,
+      "id": "w32",
       "name": "Wildfire Staff",
       "image": "MAIN_FIRESTAFF_KEEPER",
-      "type": "1H",
-      "category": "fire staff"
+      "type": "weapon",
+      "require": "1H",
+      "category": "fire staff",
+      "usage": "CD"
     },
     {
-      "id": 33,
+      "id": "w33",
       "name": "Brimstone Staff",
       "image": "2H_FIRESTAFF_HELL",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "fire staff"
     },
     {
-      "id": 34,
+      "id": "w34",
       "name": "Blazing Staff",
       "image": "2H_INFERNOSTAFF_MORGANA",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "fire staff"
     },
     {
-      "id": 35,
+      "id": "w35",
       "name": "Dawnsong",
       "image": "2H_FIRE_RINGPAIR_AVALON",
-      "type": "2H",
-      "category": "fire staff"
+      "type": "weapon",
+      "require": "2H",
+      "category": "fire staff",
+      "usage": "CD"
     },
     {
-      "id": 36,
+      "id": "w36",
       "name": "Frost Staff",
       "image": "MAIN_FROSTSTAFF",
-      "type": "1H",
-      "category": "frost staff"
+      "type": "weapon",
+      "require": "1H",
+      "category": "frost staff",
+      "usage": "CD"
     },
     {
-      "id": 37,
+      "id": "w37",
       "name": "Great Frost Staff",
       "image": "2H_FROSTSTAFF",
-      "type": "2H",
-      "category": "frost staff"
+      "type": "weapon",
+      "require": "2H",
+      "category": "frost staff",
+      "usage": "CD"
     },
     {
-      "id": 38,
+      "id": "w38",
       "name": "Glacial Staff",
       "image": "2H_GLACIALSTAFF",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "frost staff"
     },
     {
-      "id": 39,
+      "id": "w39",
       "name": "Hoarfrost Staff",
       "image": "MAIN_FROSTSTAFF_KEEPER",
-      "type": "1H",
+      "type": "weapon",
+      "require": "1H",
       "category": "frost staff"
     },
     {
-      "id": 40,
+      "id": "w40",
       "name": "Icicle Staff",
       "image": "2H_ICEGAUNTLETS_HELL",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "frost staff"
     },
     {
-      "id": 41,
+      "id": "w41",
       "name": "Permafrost Prism",
       "image": "2H_ICECRYSTAL_UNDEAD",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "frost staff"
     },
     {
-      "id": 42,
+      "id": "w42",
       "name": "Chillhowl",
       "image": "MAIN_FROSTSTAFF_AVALON",
-      "type": "1H",
-      "category": "frost staff"
+      "type": "weapon",
+      "require": "1H",
+      "category": "frost staff",
+      "usage": "CD"
     },
     {
-      "id": 43,
+      "id": "w43",
       "name": "Holy Staff",
       "image": "MAIN_HOLYSTAFF",
-      "type": "1H",
-      "category": "holy staff"
+      "type": "weapon",
+      "require": "1H",
+      "category": "holy staff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w44",
       "name": "Great Holy Staff",
       "image": "2H_HOLYSTAFF",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "holy staff"
     },
     {
-      "id": 1,
+      "id": "w45",
       "name": "Divine Staff",
       "image": "2H_DIVINESTAFF",
-      "type": "2H",
-      "category": "holy staff"
+      "type": "weapon",
+      "require": "2H",
+      "category": "holy staff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w46",
       "name": "Lifetouch Staff",
       "image": "MAIN_HOLYSTAFF_MORGANA",
-      "type": "1H",
-      "category": "holy staff"
+      "type": "weapon",
+      "require": "1H",
+      "category": "holy staff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w47",
       "name": "Fallen Staff",
       "image": "2H_HOLYSTAFF_HELL",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "holy staff"
     },
     {
-      "id": 1,
+      "id": "w48",
       "name": "Redemption Staff",
       "image": "2H_HOLYSTAFF_UNDEAD",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "holy staff"
     },
     {
-      "id": 1,
+      "id": "w49",
       "name": "Hallowfall",
       "image": "MAIN_HOLYSTAFF_AVALON",
-      "type": "1H",
-      "category": "holy staff"
+      "type": "weapon",
+      "require": "1H",
+      "category": "holy staff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w50",
       "name": "Hammer",
       "image": "MAIN_HAMMER",
-      "type": "1H",
+      "type": "weapon",
+      "require": "1H",
       "category": "hammer"
     },
     {
-      "id": 1,
+      "id": "w51",
       "name": "Great Hammer",
       "image": "2H_HAMMER",
-      "type": "2H",
-      "category": "hammer"
+      "type": "weapon",
+      "require": "2H",
+      "category": "hammer",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w52",
       "name": "Polehammer",
       "image": "2H_POLEHAMMER",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "hammer"
     },
     {
-      "id": 1,
+      "id": "w53",
       "name": "Tombhammer",
       "image": "2H_HAMMER_UNDEAD",
-      "type": "2H",
-      "category": "hammer"
+      "type": "weapon",
+      "require": "2H",
+      "category": "hammer",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w54",
       "name": "Forge Hammers",
       "image": "2H_DUALHAMMER_HELL",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "hammer"
     },
     {
-      "id": 1,
+      "id": "w55",
       "name": "Grovekeeper",
       "image": "2H_RAM_KEEPER",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "hammer"
     },
     {
-      "id": 1,
+      "id": "w56",
       "name": "Hand of Justice",
       "image": "2H_HAMMER_AVALON",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "hammer"
     },
     {
-      "id": 1,
+      "id": "w57",
       "name": "Dagger",
       "image": "MAIN_DAGGER",
-      "type": "1H",
-      "category": "dagger"
+      "type": "weapon",
+      "require": "1H",
+      "category": "dagger",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w58",
       "name": "Dagger Pair",
       "image": "2H_DAGGERPAIR",
-      "type": "2H",
-      "category": "dagger"
+      "type": "weapon",
+      "require": "2H",
+      "category": "dagger",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w59",
       "name": "Claws",
       "image": "2H_CLAWPAIR",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "dagger"
     },
     {
-      "id": 1,
+      "id": "w60",
       "name": "Bloodletter",
       "image": "MAIN_RAPIER_MORGANA",
-      "type": "1H",
-      "category": "dagger"
+      "type": "weapon",
+      "require": "1H",
+      "category": "dagger",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w61",
       "name": "Demonfang",
       "image": "MAIN_DAGGER_HELL",
-      "type": "1H",
+      "type": "weapon",
+      "require": "1H",
       "category": "dagger"
     },
     {
-      "id": 1,
+      "id": "w62",
       "name": "Deathgivers",
       "image": "2H_DUALSICKLE_UNDEAD",
-      "type": "2H",
-      "category": "dagger"
+      "type": "weapon",
+      "require": "2H",
+      "category": "dagger",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w63",
       "name": "Bridled Fury",
       "image": "2H_DAGGER_KATAR_AVALON",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "dagger"
     },
     {
-      "id": 1,
+      "id": "w64",
       "name": "Mace",
       "image": "MAIN_MACE",
-      "type": "1H",
-      "category": "mace"
+      "type": "weapon",
+      "require": "1H",
+      "category": "mace",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w65",
       "name": "Heavy Mace",
       "image": "2H_MACE",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "mace"
     },
     {
-      "id": 1,
+      "id": "w66",
       "name": "Morning Star",
       "image": "2H_FLAIL",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "mace"
     },
     {
-      "id": 1,
+      "id": "w67",
       "name": "Bedrock Mace",
       "image": "MAIN_ROCKMACE_KEEPER",
-      "type": "1H",
+      "type": "weapon",
+      "require": "1H",
       "category": "mace"
     },
     {
-      "id": 1,
+      "id": "w68",
       "name": "Incubus Mace",
       "image": "MAIN_MACE_HELL",
-      "type": "1H",
+      "type": "weapon",
+      "require": "1H",
       "category": "mace"
     },
     {
-      "id": 1,
+      "id": "w69",
       "name": "Camlann Mace",
       "image": "2H_MACE_MORGANA",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "mace"
     },
     {
-      "id": 1,
+      "id": "w70",
       "name": "Oathkeepers",
       "image": "2H_DUALMACE_AVALON",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "mace"
     },
     {
-      "id": 1,
+      "id": "w71",
       "name": "Quarterstaff",
       "image": "2H_QUARTERSTAFF",
-      "type": "2H",
-      "category": "quarterstaff"
+      "type": "weapon",
+      "require": "2H",
+      "category": "quarterstaff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w72",
       "name": "Iron-clad Staff",
       "image": "2H_IRONCLADEDSTAFF",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "quarterstaff"
     },
     {
-      "id": 1,
+      "id": "w73",
       "name": "Double Bladed Staff",
       "image": "2H_DOUBLEBLADEDSTAFF",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "quarterstaff"
     },
     {
-      "id": 1,
+      "id": "w74",
       "name": "Black Monk Stave",
       "image": "2H_COMBATSTAFF_MORGANA",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "quarterstaff"
     },
     {
-      "id": 1,
+      "id": "w75",
       "name": "Soulscythe",
       "image": "2H_TWINSCYTHE_HELL",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "quarterstaff"
     },
     {
-      "id": 1,
+      "id": "w76",
       "name": "Staff of Balance",
       "image": "2H_ROCKSTAFF_KEEPER",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "quarterstaff"
     },
     {
-      "id": 1,
+      "id": "w77",
       "name": "Grailseeker",
       "image": "2H_QUARTERSTAFF_AVALON",
-      "type": "2H",
-      "category": "quarterstaff"
+      "type": "weapon",
+      "require": "2H",
+      "category": "quarterstaff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w78",
       "name": "Cursed Staff",
       "image": "MAIN_CURSEDSTAFF",
-      "type": "1H",
-      "category": "cursed staff"
+      "type": "weapon",
+      "require": "1H",
+      "category": "cursed staff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w79",
       "name": "Great Cursed Staff",
       "image": "2H_CURSEDSTAFF",
-      "type": "2H",
-      "category": "cursed staff"
+      "type": "weapon",
+      "require": "2H",
+      "category": "cursed staff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w80",
       "name": "Demonic Staff",
       "image": "2H_DEMONICSTAFF",
-      "type": "2H",
-      "category": "cursed staff"
+      "type": "weapon",
+      "require": "2H",
+      "category": "cursed staff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w81",
       "name": "Lifecurse Staff",
       "image": "MAIN_CURSEDSTAFF_UNDEAD",
-      "type": "1H",
-      "category": "cursed staff"
+      "type": "weapon",
+      "require": "1H",
+      "category": "cursed staff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w82",
       "name": "Cursed Skull",
       "image": "2H_SKULLORB_HELL",
-      "type": "2H",
-      "category": "cursed staff"
+      "type": "weapon",
+      "require": "2H",
+      "category": "cursed staff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w83",
       "name": "Damnation Staff",
       "image": "2H_CURSEDSTAFF_MORGANA",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "cursed staff"
     },
     {
-      "id": 1,
+      "id": "w84",
       "name": "Shadowcaller",
       "image": "MAIN_CURSEDSTAFF_AVALON",
-      "type": "1H",
-      "category": "cursed staff"
+      "type": "weapon",
+      "require": "1H",
+      "category": "cursed staff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w85",
       "name": "Nature Staff",
       "image": "MAIN_NATURESTAFF",
-      "type": "1H",
+      "type": "weapon",
+      "require": "1H",
       "category": "nature staff"
     },
     {
-      "id": 1,
+      "id": "w86",
       "name": "Great Nature Staff",
       "image": "2H_NATURESTAFF",
-      "type": "2H",
-      "category": "nature staff"
+      "type": "weapon",
+      "require": "2H",
+      "category": "nature staff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w87",
       "name": "Wild Staff",
       "image": "2H_WILDSTAFF",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "nature staff"
     },
     {
-      "id": 1,
+      "id": "w88",
       "name": "Druidic Staff",
       "image": "MAIN_NATURESTAFF_KEEPER",
-      "type": "1H",
+      "type": "weapon",
+      "require": "1H",
       "category": "nature staff"
     },
     {
-      "id": 1,
+      "id": "w89",
       "name": "Blight Staff",
       "image": "2H_NATURESTAFF_HELL",
-      "type": "2H",
-      "category": "nature staff"
+      "type": "weapon",
+      "require": "2H",
+      "category": "nature staff",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w90",
       "name": "Rampant Staff",
       "image": "2H_NATURESTAFF_KEEPER",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "nature staff"
     },
     {
-      "id": 1,
+      "id": "w91",
       "name": "Ironroot Staff",
       "image": "MAIN_NATURESTAFF_AVALON",
-      "type": "1H",
+      "type": "weapon",
+      "require": "1H",
       "category": "nature staff"
     },
     {
-      "id": 1,
+      "id": "w92",
       "name": "Broadsword",
       "image": "MAIN_SWORD",
-      "type": "1H",
-      "category": "sword"
+      "type": "weapon",
+      "require": "1H",
+      "category": "sword",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w93",
       "name": "Claymore",
       "image": "2H_CLAYMORE",
-      "type": "2H",
-      "category": "sword"
+      "type": "weapon",
+      "require": "2H",
+      "category": "sword",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w94",
       "name": "Dual Swords",
       "image": "2H_DUALSWORD",
-      "type": "2H",
-      "category": "sword"
+      "type": "weapon",
+      "require": "2H",
+      "category": "sword",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w95",
       "name": "Clarent Blade",
       "image": "MAIN_SCIMITAR_MORGANA",
-      "type": "1H",
+      "type": "weapon",
+      "require": "1H",
       "category": "sword"
     },
     {
-      "id": 1,
+      "id": "w96",
       "name": "Carving Sword",
       "image": "2H_CLEAVER_HELL",
-      "type": "2H",
-      "category": "sword"
+      "type": "weapon",
+      "require": "2H",
+      "category": "sword",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w97",
       "name": "Galatine Pair",
       "image": "2H_DUALSCIMITAR_UNDEAD",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "sword"
     },
     {
-      "id": 1,
+      "id": "w98",
       "name": "Kingmaker",
       "image": "2H_CLAYMORE_AVALON",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "sword"
     },
     {
-      "id": 1,
+      "id": "w99",
       "name": "Brawler Gloves",
       "image": "2H_KNUCKLES_SET1",
-      "type": "2H",
-      "category": "war gloves"
+      "type": "weapon",
+      "require": "2H",
+      "category": "war gloves",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w100",
       "name": "Battle Bracers",
       "image": "2H_KNUCKLES_SET2",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "war gloves"
     },
     {
-      "id": 1,
+      "id": "w101",
       "name": "Spiked Gauntlets",
       "image": "2H_KNUCKLES_SET3",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "war gloves"
     },
     {
-      "id": 1,
+      "id": "w102",
       "name": "Ursine Maulers",
       "image": "2H_KNUCKLES_KEEPER",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "war gloves"
     },
     {
-      "id": 1,
+      "id": "w103",
       "name": "Hellfire Hands",
       "image": "2H_KNUCKLES_HELL",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "war gloves"
     },
     {
-      "id": 1,
+      "id": "w104",
       "name": "Ravenstrike Cestus",
       "image": "2H_KNUCKLES_MORGANA",
-      "type": "2H",
+      "type": "weapon",
+      "require": "2H",
       "category": "war gloves"
     },
     {
-      "id": 1,
+      "id": "w105",
       "name": "Fists of Avalon",
       "image": "2H_KNUCKLES_AVALON",
-      "type": "2H",
-      "category": "war gloves"
+      "type": "weapon",
+      "require": "2H",
+      "category": "war gloves",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w106",
       "name": "Spear",
       "image": "MAIN_SPEAR",
-      "type": "1H",
-      "category": "spear"
+      "type": "weapon",
+      "require": "1H",
+      "category": "spear",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w107",
       "name": "Pike",
       "image": "2H_SPEAR",
-      "type": "2H",
-      "category": "spear"
+      "type": "weapon",
+      "require": "2H",
+      "category": "spear",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w108",
       "name": "Glaive",
       "image": "2H_GLAIVE",
-      "type": "2H",
-      "category": "spear"
+      "type": "weapon",
+      "require": "2H",
+      "category": "spear",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w109",
       "name": "Heron Spear",
       "image": "MAIN_SPEAR_KEEPER",
-      "type": "1H",
-      "category": "spear"
+      "type": "weapon",
+      "require": "1H",
+      "category": "spear",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w110",
       "name": "Spirithunter",
       "image": "2H_HARPOON_HELL",
-      "type": "2H",
-      "category": "spear"
+      "type": "weapon",
+      "require": "2H",
+      "category": "spear",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w111",
       "name": "Trinity Spear",
       "image": "2H_TRIDENT_UNDEAD",
-      "type": "2H",
-      "category": "spear"
+      "type": "weapon",
+      "require": "2H",
+      "category": "spear",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "w112",
       "name": "Daybreaker",
       "image": "MAIN_SPEAR_LANCE_AVALON",
-      "type": "1H",
-      "category": "spear"
+      "type": "weapon",
+      "require": "1H",
+      "category": "spear",
+      "usage": "CD"
     }
   ],
   "offhand": [
     {
-      "id": 1,
+      "id": "o1",
       "name": "Shield",
-      "image": "SHIELD",
-      "type": "1H",
-      "category": "shield"
+      "image": "OFF_SHIELD",
+      "type": "offhand",
+      "require": "1H",
+      "category": "shield",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "o2",
       "name": "Caitiff Shield",
-      "image": "SHIELD_HELL",
-      "type": "1H",
+      "image": "OFF_SHIELD_HELL",
+      "type": "offhand",
+      "require": "1H",
       "category": "shield"
     },
     {
-      "id": 1,
+      "id": "o3",
       "name": "Facebreaker",
-      "image": "SPIKEDSHIELD_MORGANA",
-      "type": "1H",
-      "category": "shield"
+      "image": "OFF_SPIKEDSHIELD_MORGANA",
+      "type": "offhand",
+      "require": "1H",
+      "category": "shield",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "o4",
       "name": "Sarcophagus",
-      "image": "TOWERSHIELD_UNDEAD",
-      "type": "1H",
-      "category": "shield"
+      "image": "OFF_TOWERSHIELD_UNDEAD",
+      "type": "offhand",
+      "require": "1H",
+      "category": "shield",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "o5",
       "name": "Astral Aegis",
-      "image": "SHIELD_AVALON",
-      "type": "1H",
-      "category": "shield"
+      "image": "OFF_SHIELD_AVALON",
+      "type": "offhand",
+      "require": "1H",
+      "category": "shield",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "o6",
       "name": "Torch",
-      "image": "TORCH",
-      "type": "1H",
-      "category": "torch"
+      "image": "OFF_TORCH",
+      "type": "offhand",
+      "require": "1H",
+      "category": "torch",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "o7",
       "name": "Mistcaller",
-      "image": "HORN_KEEPER",
-      "type": "1H",
-      "category": "torch"
+      "image": "OFF_HORN_KEEPER",
+      "type": "offhand",
+      "require": "1H",
+      "category": "torch",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "o8",
       "name": "Cryptcandle",
-      "image": "LAMP_UNDEAD",
-      "type": "1H",
-      "category": "torch"
+      "image": "OFF_LAMP_UNDEAD",
+      "type": "offhand",
+      "require": "1H",
+      "category": "torch",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "o9",
       "name": "Leering Cane",
-      "image": "JESTERCANE_HELL",
-      "type": "1H",
-      "category": "torch"
+      "image": "OFF_JESTERCANE_HELL",
+      "type": "offhand",
+      "require": "1H",
+      "category": "torch",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "o10",
       "name": "Sacred Scepter",
-      "image": "TALISMAN_AVALON",
-      "type": "1H",
+      "image": "OFF_TALISMAN_AVALON",
+      "type": "offhand",
+      "require": "1H",
       "category": "torch"
     },
     {
-      "id": 1,
+      "id": "o11",
       "name": "Tome of Spells",
-      "image": "BOOK",
-      "type": "1H",
-      "category": "tome"
+      "image": "OFF_BOOK",
+      "type": "offhand",
+      "require": "1H",
+      "category": "tome",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "o12",
       "name": "Eye of Secrets",
-      "image": "ORB_MORGANA",
-      "type": "1H",
+      "image": "OFF_ORB_MORGANA",
+      "type": "offhand",
+      "require": "1H",
       "category": "tome"
     },
     {
-      "id": 1,
+      "id": "o13",
       "name": "Taproot",
-      "image": "TOTEM_KEEPER",
-      "type": "1H",
-      "category": "tome"
+      "image": "OFF_TOTEM_KEEPER",
+      "type": "offhand",
+      "require": "1H",
+      "category": "tome",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "o14",
       "name": "Muisak",
-      "image": "DEMONSKULL_HELL",
-      "type": "1H",
-      "category": "tome"
+      "image": "OFF_DEMONSKULL_HELL",
+      "type": "offhand",
+      "require": "1H",
+      "category": "tome",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "o15",
       "name": "Celestial Censer",
-      "image": "CENSER_AVALON",
-      "type": "1H",
+      "image": "OFF_CENSER_AVALON",
+      "type": "offhand",
+      "require": "1H",
       "category": "tome"
     }
   ],
   "helmet": [
     {
-      "id": 1,
+      "id": "h1",
       "name": "Mercenary Hood",
-      "image": "LEATHER_SET1",
+      "image": "HEAD_LEATHER_SET1",
       "type": "helmet",
       "category": "leather hood"
     },
     {
-      "id": 1,
+      "id": "h2",
       "name": "Hunter Hood",
-      "image": "LEATHER_SET2",
+      "image": "HEAD_LEATHER_SET2",
       "type": "helmet",
-      "category": "leather hood"
+      "category": "leather hood",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h3",
       "name": "Assassin Hood",
-      "image": "LEATHER_SET3",
+      "image": "HEAD_LEATHER_SET3",
       "type": "helmet",
-      "category": "leather hood"
+      "category": "leather hood",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h4",
       "name": "Hellion Hood",
-      "image": "LEATHER_HELL",
+      "image": "HEAD_LEATHER_HELL",
       "type": "helmet",
-      "category": "leather hood"
+      "category": "leather hood",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h5",
       "name": "Specter Hood",
-      "image": "LEATHER_UNDEAD",
+      "image": "HEAD_LEATHER_UNDEAD",
       "type": "helmet",
-      "category": "leather hood"
+      "category": "leather hood",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h6",
       "name": "Stalker Hood",
-      "image": "LEATHER_MORGANA",
+      "image": "HEAD_LEATHER_MORGANA",
       "type": "helmet",
-      "category": "leather hood"
+      "category": "leather hood",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h7",
       "name": "Royal Hood",
-      "image": "LEATHER_ROYAL",
+      "image": "HEAD_LEATHER_ROYAL",
       "type": "helmet",
       "category": "leather hood"
     },
     {
-      "id": 1,
+      "id": "h8",
       "name": "Hood of Tenacity",
-      "image": "LEATHER_AVALON",
+      "image": "HEAD_LEATHER_AVALON",
       "type": "helmet",
       "category": "leather hood"
     },
     {
-      "id": 1,
+      "id": "h9",
       "name": "Scholar Cowl",
-      "image": "CLOTH_SET1",
+      "image": "HEAD_CLOTH_SET1",
       "type": "helmet",
       "category": "cloth cowl"
     },
     {
-      "id": 1,
+      "id": "h10",
       "name": "Cleric Cowl",
-      "image": "CLOTH_SET2",
+      "image": "HEAD_CLOTH_SET2",
       "type": "helmet",
-      "category": "cloth cowl"
+      "category": "cloth cowl",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h11",
       "name": "Mage Cowl",
-      "image": "CLOTH_SET3",
+      "image": "HEAD_CLOTH_SET3",
       "type": "helmet",
-      "category": "cloth cowl"
+      "category": "cloth cowl",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h12",
       "name": "Royal Cowl",
-      "image": "CLOTH_ROYAL",
+      "image": "HEAD_CLOTH_ROYAL",
       "type": "helmet",
       "category": "cloth cowl"
     },
     {
-      "id": 1,
+      "id": "h13",
       "name": "Fiend Cowl",
-      "image": "CLOTH_HELL",
+      "image": "HEAD_CLOTH_HELL",
       "type": "helmet",
-      "category": "cloth cowl"
+      "category": "cloth cowl",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h14",
       "name": "Cultist Cowl",
-      "image": "CLOTH_MORGANA",
+      "image": "HEAD_CLOTH_MORGANA",
       "type": "helmet",
-      "category": "cloth cowl"
+      "category": "cloth cowl",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h15",
       "name": "Druid Cowl",
-      "image": "CLOTH_KEEPER",
+      "image": "HEAD_CLOTH_KEEPER",
       "type": "helmet",
-      "category": "cloth cowl"
+      "category": "cloth cowl",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h16",
       "name": "Cowl of Purity",
-      "image": "CLOTH_AVALON",
+      "image": "HEAD_CLOTH_AVALON",
       "type": "helmet",
-      "category": "cloth cowl"
+      "category": "cloth cowl",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h17",
       "name": "Soldier Helmet",
-      "image": "PLATE_SET1",
+      "image": "HEAD_PLATE_SET1",
       "type": "helmet",
-      "category": "plate helmet"
+      "category": "plate helmet",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h18",
       "name": "Knight Helmet",
-      "image": "PLATE_SET2",
+      "image": "HEAD_PLATE_SET2",
       "type": "helmet",
-      "category": "plate helmet"
+      "category": "plate helmet",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h19",
       "name": "Guardian Helmet",
-      "image": "PLATE_SET3",
+      "image": "HEAD_PLATE_SET3",
       "type": "helmet",
-      "category": "plate helmet"
+      "category": "plate helmet",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h20",
       "name": "Royal Helmet",
-      "image": "PLATE_ROYAL",
+      "image": "HEAD_PLATE_ROYAL",
       "type": "helmet",
-      "category": "plate helmet"
+      "category": "plate helmet",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h21",
       "name": "Demon Helmet",
-      "image": "PLATE_HELL",
+      "image": "HEAD_PLATE_HELL",
       "type": "helmet",
-      "category": "plate helmet"
+      "category": "plate helmet",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "h22",
       "name": "Graveguard Helmet",
-      "image": "PLATE_UNDEAD",
+      "image": "HEAD_PLATE_UNDEAD",
       "type": "helmet",
       "category": "plate helmet"
     },
     {
-      "id": 1,
+      "id": "h23",
       "name": "Judicator Helmet",
-      "image": "PLATE_KEEPER",
+      "image": "HEAD_PLATE_KEEPER",
       "type": "helmet",
       "category": "plate helmet"
     },
     {
-      "id": 1,
+      "id": "h24",
       "name": "Helmet of Valor",
-      "image": "PLATE_AVALON",
+      "image": "HEAD_PLATE_AVALON",
       "type": "helmet",
-      "category": "plate helmet"
+      "category": "plate helmet",
+      "usage": "CD"
     }
   ],
   "armor": [
     {
-      "id": 1,
+      "id": "a1",
       "name": "Mercenary Jacket",
-      "image": "LEATHER_SET1",
+      "image": "ARMOR_LEATHER_SET1",
       "type": "armor",
-      "category": "leather jacket"
+      "category": "leather jacket",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a2",
       "name": "Hunter Jacket",
-      "image": "LEATHER_SET2",
+      "image": "ARMOR_LEATHER_SET2",
       "type": "armor",
-      "category": "leather jacket"
+      "category": "leather jacket",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a3",
       "name": "Assassin Jacket",
-      "image": "LEATHER_SET3",
+      "image": "ARMOR_LEATHER_SET3",
       "type": "armor",
-      "category": "leather jacket"
+      "category": "leather jacket",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a4",
       "name": "Hellion Jacket",
-      "image": "LEATHER_HELL",
+      "image": "ARMOR_LEATHER_HELL",
       "type": "armor",
-      "category": "leather jacket"
+      "category": "leather jacket",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a5",
       "name": "Specter Jacket",
-      "image": "LEATHER_UNDEAD",
+      "image": "ARMOR_LEATHER_UNDEAD",
       "type": "armor",
-      "category": "leather jacket"
+      "category": "leather jacket",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a6",
       "name": "Stalker Jacket",
-      "image": "LEATHER_MORGANA",
+      "image": "ARMOR_LEATHER_MORGANA",
       "type": "armor",
-      "category": "leather jacket"
+      "category": "leather jacket",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a7",
       "name": "Royal Jacket",
-      "image": "LEATHER_ROYAL",
+      "image": "ARMOR_LEATHER_ROYAL",
       "type": "armor",
-      "category": "leather jacket"
+      "category": "leather jacket",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a8",
       "name": "Jacket of Tenacity",
-      "image": "LEATHER_AVALON",
+      "image": "ARMOR_LEATHER_AVALON",
       "type": "armor",
-      "category": "leather jacket"
+      "category": "leather jacket",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a9",
       "name": "Scholar Robe",
-      "image": "CLOTH_SET1",
+      "image": "ARMOR_CLOTH_SET1",
       "type": "armor",
-      "category": "cloth robe"
+      "category": "cloth robe",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a10",
       "name": "Cleric Robe",
-      "image": "CLOTH_SET2",
+      "image": "ARMOR_CLOTH_SET2",
       "type": "armor",
-      "category": "cloth robe"
+      "category": "cloth robe",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a11",
       "name": "Mage Robe",
-      "image": "CLOTH_SET3",
+      "image": "ARMOR_CLOTH_SET3",
       "type": "armor",
-      "category": "cloth robe"
+      "category": "cloth robe",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a12",
       "name": "Royal Robe",
-      "image": "CLOTH_ROYAL",
+      "image": "ARMOR_CLOTH_ROYAL",
       "type": "armor",
       "category": "cloth robe"
     },
     {
-      "id": 1,
+      "id": "a13",
       "name": "Fiend Robe",
-      "image": "CLOTH_HELL",
+      "image": "ARMOR_CLOTH_HELL",
       "type": "armor",
       "category": "cloth robe"
     },
     {
-      "id": 1,
+      "id": "a14",
       "name": "Cultist Robe",
-      "image": "CLOTH_MORGANA",
+      "image": "ARMOR_CLOTH_MORGANA",
       "type": "armor",
-      "category": "cloth robe"
+      "category": "cloth robe",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a15",
       "name": "Druid Robe",
-      "image": "CLOTH_KEEPER",
+      "image": "ARMOR_CLOTH_KEEPER",
       "type": "armor",
-      "category": "cloth robe"
+      "category": "cloth robe",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a16",
       "name": "Robe of Purity",
-      "image": "CLOTH_AVALON",
+      "image": "ARMOR_CLOTH_AVALON",
       "type": "armor",
       "category": "cloth robe"
     },
     {
-      "id": 1,
+      "id": "a17",
       "name": "Soldier Armor",
-      "image": "PLATE_SET1",
+      "image": "ARMOR_PLATE_SET1",
       "type": "armor",
-      "category": "plate armor"
+      "category": "plate armor",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a18",
       "name": "Knight Armor",
-      "image": "PLATE_SET2",
+      "image": "ARMOR_PLATE_SET2",
       "type": "armor",
-      "category": "plate armor"
+      "category": "plate armor",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a19",
       "name": "Guardian Armor",
-      "image": "PLATE_SET1",
+      "image": "ARMOR_PLATE_SET3",
       "type": "armor",
-      "category": "plate armor"
+      "category": "plate armor",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a20",
       "name": "Royal Armor",
-      "image": "PLATE_ROYAL",
+      "image": "ARMOR_PLATE_ROYAL",
       "type": "armor",
       "category": "plate armor"
     },
     {
-      "id": 1,
+      "id": "a21",
       "name": "Demon Armor",
-      "image": "PLATE_HELL",
+      "image": "ARMOR_PLATE_HELL",
       "type": "armor",
       "category": "plate armor"
     },
     {
-      "id": 1,
+      "id": "a22",
       "name": "Graveguard Armor",
-      "image": "PLATE_UNDEAD",
+      "image": "ARMOR_PLATE_UNDEAD",
       "type": "armor",
-      "category": "plate armor"
+      "category": "plate armor",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "a23",
       "name": "Judicator Armor",
-      "image": "PLATE_KEEPER",
+      "image": "ARMOR_PLATE_KEEPER",
       "type": "armor",
       "category": "plate armor"
     },
     {
-      "id": 1,
+      "id": "a24",
       "name": "Armor of Valor",
-      "image": "PLATE_AVALON",
+      "image": "ARMOR_PLATE_AVALON",
       "type": "armor",
-      "category": "plate armor"
+      "category": "plate armor",
+      "usage": "CD"
     }
   ],
   "shoe": [
     {
-      "id": 1,
+      "id": "s1",
       "name": "Mercenary Shoes",
-      "image": "LEATHER_SET1",
+      "image": "SHOES_LEATHER_SET1",
       "type": "shoe",
-      "category": "leather shoes"
+      "category": "leather shoes",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s2",
       "name": "Hunter Shoes",
-      "image": "LEATHER_SET2",
+      "image": "SHOES_LEATHER_SET2",
       "type": "shoe",
-      "category": "leather shoes"
+      "category": "leather shoes",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s3",
       "name": "Assassin Shoes",
-      "image": "LEATHER_SET3",
+      "image": "SHOES_LEATHER_SET3",
       "type": "shoe",
-      "category": "leather shoes"
+      "category": "leather shoes",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s4",
       "name": "Hellion Shoes",
-      "image": "LEATHER_HELL",
+      "image": "SHOES_LEATHER_HELL",
       "type": "shoe",
-      "category": "leather shoes"
+      "category": "leather shoes",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s5",
       "name": "Specter Shoes",
-      "image": "LEATHER_UNDEAD",
+      "image": "SHOES_LEATHER_UNDEAD",
       "type": "shoe",
-      "category": "leather shoes"
+      "category": "leather shoes",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s6",
       "name": "Stalker Shoes",
-      "image": "LEATHER_MORGANA",
+      "image": "SHOES_LEATHER_MORGANA",
       "type": "shoe",
-      "category": "leather shoes"
+      "category": "leather shoes",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s7",
       "name": "Royal Shoes",
-      "image": "LEATHER_ROYAL",
+      "image": "SHOES_LEATHER_ROYAL",
       "type": "shoe",
       "category": "leather shoes"
     },
     {
-      "id": 1,
+      "id": "s8",
       "name": "Shoes of Tenacity",
-      "image": "LEATHER_AVALON",
+      "image": "SHOES_LEATHER_AVALON",
       "type": "shoe",
       "category": "leather shoes"
     },
     {
-      "id": 1,
+      "id": "s9",
       "name": "Scholar Sandals",
-      "image": "CLOTH_SET1",
+      "image": "SHOES_CLOTH_SET1",
       "type": "shoe",
-      "category": "cloth sandals"
+      "category": "cloth sandals",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s10",
       "name": "Cleric Sandals",
-      "image": "CLOTH_SET2",
+      "image": "SHOES_CLOTH_SET2",
       "type": "shoe",
-      "category": "cloth sandals"
+      "category": "cloth sandals",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s11",
       "name": "Mage Sandals",
-      "image": "CLOTH_SET3",
+      "image": "SHOES_CLOTH_SET3",
       "type": "shoe",
-      "category": "cloth sandals"
+      "category": "cloth sandals",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s12",
       "name": "Royal Sandals",
-      "image": "CLOTH_ROYAL",
+      "image": "SHOES_CLOTH_ROYAL",
       "type": "shoe",
-      "category": "cloth sandals"
+      "category": "cloth sandals",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s13",
       "name": "Fiend Sandals",
-      "image": "CLOTH_HELL",
+      "image": "SHOES_CLOTH_HELL",
       "type": "shoe",
-      "category": "cloth sandals"
+      "category": "cloth sandals",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s14",
       "name": "Cultist Sandals",
-      "image": "CLOTH_MORGANA",
+      "image": "SHOES_CLOTH_MORGANA",
       "type": "shoe",
       "category": "cloth sandals"
     },
     {
-      "id": 1,
+      "id": "s15",
       "name": "Druid Sandals",
-      "image": "CLOTH_KEEPER",
+      "image": "SHOES_CLOTH_KEEPER",
       "type": "shoe",
       "category": "cloth sandals"
     },
     {
-      "id": 1,
+      "id": "s16",
       "name": "Sandals of Purity",
-      "image": "CLOTH_AVALON",
+      "image": "SHOES_CLOTH_AVALON",
       "type": "shoe",
-      "category": "cloth sandals"
+      "category": "cloth sandals",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s17",
       "name": "Soldier Boots",
-      "image": "PLATE_SET1",
+      "image": "SHOES_PLATE_SET1",
       "type": "shoe",
-      "category": "plate boots"
+      "category": "plate boots",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s18",
       "name": "Knight Boots",
-      "image": "PLATE_SET2",
+      "image": "SHOES_PLATE_SET2",
       "type": "shoe",
-      "category": "plate boots"
+      "category": "plate boots",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s19",
       "name": "Guardian Boots",
-      "image": "PLATE_SET1",
+      "image": "SHOES_PLATE_SET3",
       "type": "shoe",
-      "category": "plate boots"
+      "category": "plate boots",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s20",
       "name": "Royal Boots",
-      "image": "PLATE_ROYAL",
+      "image": "SHOES_PLATE_ROYAL",
       "type": "shoe",
-      "category": "plate boots"
+      "category": "plate boots",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s21",
       "name": "Demon Boots",
-      "image": "PLATE_HELL",
+      "image": "SHOES_PLATE_HELL",
       "type": "shoe",
-      "category": "plate boots"
+      "category": "plate boots",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s22",
       "name": "Graveguard Boots",
-      "image": "PLATE_UNDEAD",
+      "image": "SHOES_PLATE_UNDEAD",
       "type": "shoe",
-      "category": "plate boots"
+      "category": "plate boots",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s23",
       "name": "Judicator Boots",
-      "image": "PLATE_KEEPER",
+      "image": "SHOES_PLATE_KEEPER",
       "type": "shoe",
-      "category": "plate boots"
+      "category": "plate boots",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "s24",
       "name": "Boots of Valor",
-      "image": "PLATE_AVALON",
+      "image": "SHOES_PLATE_AVALON",
       "type": "shoe",
-      "category": "plate boots"
+      "category": "plate boots",
+      "usage": "CD"
     }
   ],
   "cape": [
     {
-      "id": 1,
+      "id": "c1",
       "name": "Cape",
       "image": "CAPE",
-      "type": "capes",
+      "type": "cape",
       "category": "cape"
     },
     {
-      "id": 1,
+      "id": "c2",
       "name": "Lymhurst Cape",
       "image": "CAPEITEM_FW_LYMHURST",
-      "type": "capes",
-      "category": "city faction cape"
+      "type": "cape",
+      "category": "city faction cape",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "c3",
       "name": "Bridgewatch Cape",
       "image": "CAPEITEM_FW_BRIDGEWATCH",
-      "type": "capes",
-      "category": "city faction cape"
+      "type": "cape",
+      "category": "city faction cape",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "c4",
       "name": "Caerleon Cape",
       "image": "CAPEITEM_FW_CAERLEON",
-      "type": "capes",
-      "category": "city faction cape"
+      "type": "cape",
+      "category": "city faction cape",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "c5",
       "name": "Martlock Cape",
       "image": "CAPEITEM_FW_MARTLOCK",
-      "type": "capes",
-      "category": "city faction cape"
+      "type": "cape",
+      "category": "city faction cape",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "c6",
       "name": "Thetford Cape",
       "image": "CAPEITEM_FW_THETFORD",
-      "type": "Accessory",
-      "category": "city faction cape"
+      "type": "cape",
+      "category": "city faction cape",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "c7",
       "name": "Fort Sterling Cape",
       "image": "CAPEITEM_FW_FORTSTERLING",
-      "type": "capes",
-      "category": "city faction cape"
+      "type": "cape",
+      "category": "city faction cape",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "c8",
       "name": "Demon Cape",
       "image": "CAPEITEM_DEMON",
-      "type": "capes",
-      "category": "mob faction cape"
+      "type": "cape",
+      "category": "mob faction cape",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "c9",
       "name": "Keeper Cape",
       "image": "CAPEITEM_KEEPER",
-      "type": "capes",
-      "category": "mob faction cape"
+      "type": "cape",
+      "category": "mob faction cape",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "c10",
       "name": "Morgana Cape",
       "image": "CAPEITEM_MORGANA",
-      "type": "capes",
-      "category": "mob faction cape"
+      "type": "cape",
+      "category": "mob faction cape",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "c11",
       "name": "Undead Cape",
       "image": "CAPEITEM_UNDEAD",
-      "type": "capes",
-      "category": "mob faction cape"
+      "type": "cape",
+      "category": "mob faction cape",
+      "usage": "CD"
     },
     {
-      "id": 1,
+      "id": "c12",
       "name": "Heretic Cape",
       "image": "CAPEITEM_HERETIC",
-      "type": "capes",
-      "category": "mob faction cape"
+      "type": "cape",
+      "category": "mob faction cape",
+      "usage": "CD"
     }
   ]
 }
