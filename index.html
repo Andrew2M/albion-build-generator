@@ -387,12 +387,35 @@
           </button>
         </div>
         <div id="filter-menu">
+          <div>
+            <ul class="filter-options__nav">
+              <li>
+                <button data-slot="weapon" class="btn__link">Weapon</button>
+              </li>
+              <li>
+                <button data-slot="offhand" class="btn__link">Off-Hand</button>
+              </li>
+              <li>
+                <button data-slot="helmet" class="btn__link">Helmet</button>
+              </li>
+              <li>
+                <button data-slot="armor" class="btn__link">Armor</button>
+              </li>
+              <li>
+                <button data-slot="shoe" class="btn__link">Shoes</button>
+              </li>
+              <li>
+                <button data-slot="cape" class="btn__link">Cape</button>
+              </li>
+            </ul>
+          </div>
+
           <div
             class="filter-options__form filter-options--success remove"
             data-slot="weapon"
             data-status="checked"
           >
-            <h3 class="filter-options__heading">Weapon</h3>
+            <!-- <h3 class="filter-options__heading">Weapon</h3> -->
             <div class="select__container">
               <button
                 class="btn__filter btn--shade btn__filter-none"
@@ -1307,7 +1330,7 @@
             class="filter-options__form filter-options--success remove"
             data-slot="offhand"
           >
-            <h3 class="filter-options__heading">Off-hand</h3>
+            <!-- <h3 class="filter-options__heading">Off-hand</h3> -->
             <div class="select__container">
               <button
                 class="btn__filter btn--shade btn__filter-none"
@@ -1521,7 +1544,7 @@
             class="filter-options__form filter-options--success remove"
             data-slot="helmet"
           >
-            <h3 class="filter-options__heading">Helmet</h3>
+            <!-- <h3 class="filter-options__heading">Helmet</h3> -->
             <div class="select__container">
               <button
                 class="btn__filter btn--shade btn__filter-none"
@@ -1731,7 +1754,7 @@
             class="filter-options__form filter-options--success remove"
             data-slot="armor"
           >
-            <h3 class="filter-options__heading">Armor</h3>
+            <!-- <h3 class="filter-options__heading">Armor</h3> -->
             <div class="select__container">
               <button
                 class="btn__filter btn--shade btn__filter-none"
@@ -1941,7 +1964,7 @@
             class="filter-options__form filter-options--success remove"
             data-slot="shoe"
           >
-            <h3 class="filter-options__heading">Shoes</h3>
+            <!-- <h3 class="filter-options__heading">Shoes</h3> -->
             <div class="select__container">
               <button
                 class="btn__filter btn--shade btn__filter-none"
@@ -2151,7 +2174,7 @@
             class="filter-options__form filter-options--success remove"
             data-slot="cape"
           >
-            <h3 class="filter-options__heading">Cape</h3>
+            <!-- <h3 class="filter-options__heading">Cape</h3> -->
             <div class="select__container">
               <button
                 class="btn__filter btn--shade btn__filter-none"
@@ -2193,60 +2216,6 @@
                   ></path>
                 </svg>
               </button>
-            </div>
-            <div class="item-type__container">
-              <button
-                data-category="cape"
-                data-slot="cape"
-                class="btn__select btn--shade select__none"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="1em"
-                  height="1em"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 1024 1024"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
-                  />
-                </svg>
-              </button>
-
-              <p class="item-type__stats" data-mastery="cape">
-                <span class="current"> / </span><span class="total"></span>
-              </p>
-
-              <button
-                data-category="cape"
-                data-slot="cape"
-                class="btn__select btn--shade select__all"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="1em"
-                  height="1em"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 1024 1024"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z"
-                  />
-                  <path
-                    fill="currentColor"
-                    d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8Z"
-                  />
-                </svg>
-              </button>
-              <label
-                class="label__more"
-                data-slot="cape"
-                data-category="cape"
-                for="cape"
-                >Cape</label
-              >
             </div>
             <div class="item-type__container">
               <button
