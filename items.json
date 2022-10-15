@@ -1650,13 +1650,6 @@
   ],
   "cape": [
     {
-      "id": "c1",
-      "name": "Cape",
-      "image": "CAPE",
-      "type": "cape",
-      "category": "cape"
-    },
-    {
       "id": "c2",
       "name": "Lymhurst Cape",
       "image": "CAPEITEM_FW_LYMHURST",
