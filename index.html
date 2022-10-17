@@ -28,7 +28,7 @@
     <script type="module" crossorigin src="./assets/index.92f435da.js"></script>
     <link rel="stylesheet" href="./assets/index.2fe5fdaf.css">
   </head>
-  <body>
+    <body>
     <header>
       <h1>Albion Build Generator</h1>
     </header>
@@ -390,22 +390,43 @@
           <div>
             <ul class="filter-options__nav">
               <li>
-                <button data-slot="weapon" class="btn__link">Weapon</button>
+                <button data-slot="weapon" class="btn__link">
+                  <span data-slot="weapon" class="filter-options__status"></span
+                  >Weapon
+                </button>
               </li>
               <li>
-                <button data-slot="offhand" class="btn__link">Off-Hand</button>
+                <button data-slot="offhand" class="btn__link">
+                  <span
+                    data-slot="offhand"
+                    class="filter-options__status"
+                  ></span
+                  >Off-Hand
+                </button>
               </li>
               <li>
-                <button data-slot="helmet" class="btn__link">Helmet</button>
+                <button data-slot="helmet" class="btn__link">
+                  <span data-slot="helmet" class="filter-options__status"></span
+                  >Helmet
+                </button>
               </li>
               <li>
-                <button data-slot="armor" class="btn__link">Armor</button>
+                <button data-slot="armor" class="btn__link">
+                  <span data-slot="armor" class="filter-options__status"></span
+                  >Armor
+                </button>
               </li>
               <li>
-                <button data-slot="shoe" class="btn__link">Shoes</button>
+                <button data-slot="shoe" class="btn__link">
+                  <span data-slot="shoe" class="filter-options__status"></span
+                  >Shoes
+                </button>
               </li>
               <li>
-                <button data-slot="cape" class="btn__link">Cape</button>
+                <button data-slot="cape" class="btn__link">
+                  <span data-slot="cape" class="filter-options__status"></span
+                  >Cape
+                </button>
               </li>
             </ul>
           </div>
@@ -1754,7 +1775,6 @@
             class="filter-options__form filter-options--success remove"
             data-slot="armor"
           >
-            <!-- <h3 class="filter-options__heading">Armor</h3> -->
             <div class="select__container">
               <button
                 class="btn__filter btn--shade btn__filter-none"
@@ -1964,7 +1984,6 @@
             class="filter-options__form filter-options--success remove"
             data-slot="shoe"
           >
-            <!-- <h3 class="filter-options__heading">Shoes</h3> -->
             <div class="select__container">
               <button
                 class="btn__filter btn--shade btn__filter-none"
@@ -2174,7 +2193,6 @@
             class="filter-options__form filter-options--success remove"
             data-slot="cape"
           >
-            <!-- <h3 class="filter-options__heading">Cape</h3> -->
             <div class="select__container">
               <button
                 class="btn__filter btn--shade btn__filter-none"
@@ -2327,8 +2345,8 @@
             </div>
           </div>
         </div>
-        <h4 class="notification__confirmation hidden">...</h4>
-        <div class="test filter-options__items filter-options--tint"></div>
+        <h4 class="notification__confirmation"></h4>
+        <div class="filter-options__items filter-options--tint"></div>
       </section>
     </main>
     <footer></footer>
