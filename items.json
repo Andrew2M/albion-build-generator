@@ -1268,7 +1268,28 @@
       "type": "helmet",
       "category": "plate helmet",
       "usage": "CD"
-    }
+    },
+    {
+      "id": "h25",
+      "name": "Feyscale Hat",
+      "image": "HEAD_CLOTH_FEY",
+      "type": "helmet",
+      "category": "leather hood"
+    },
+    {
+      "id": "h26",
+      "name": "Mistwalker Hood",
+      "image": "HEAD_LEATHER_FEY",
+      "type": "helmet",
+      "category": "leather hood"
+    },
+    {
+      "id": "h27",
+      "name": "Duskweaver Helmet",
+      "image": "HEAD_PLATE_FEY",
+      "type": "helmet",
+      "category": "leather hood"
+    },
   ],
   "armor": [
     {
@@ -1337,7 +1358,7 @@
     },
     {
       "id": "a25",
-      "name": "Fey Jacket",
+      "name": "Mistwalker Jacket",
       "image": "ARMOR_LEATHER_FEY",
       "type": "armor",
       "category": "leather jacket",
@@ -1406,7 +1427,7 @@
     },
         {
       "id": "a26",
-      "name": "Fey Robe",
+      "name": "Feyscale Robe",
       "image": "ARMOR_CLOTH_FEY",
       "type": "armor",
       "category": "cloth robe"
@@ -1474,7 +1495,7 @@
     },
         {
       "id": "a27",
-      "name": "Fey Armor",
+      "name": "Duskweaver Armor",
       "image": "ARMOR_PLATE_FEY",
       "type": "armor",
       "category": "plate armor",
