@@ -1336,6 +1336,14 @@
       "usage": "CD"
     },
     {
+      "id": "a25",
+      "name": "Fey Jacket",
+      "image": "ARMOR_LEATHER_FEY",
+      "type": "armor",
+      "category": "leather jacket",
+      "usage": "CD"
+    },
+    {
       "id": "a9",
       "name": "Scholar Robe",
       "image": "ARMOR_CLOTH_SET1",
@@ -1396,6 +1404,13 @@
       "type": "armor",
       "category": "cloth robe"
     },
+        {
+      "id": "a26",
+      "name": "Fey Robe",
+      "image": "ARMOR_CLOTH_FEY",
+      "type": "armor",
+      "category": "cloth robe"
+    },
     {
       "id": "a17",
       "name": "Soldier Armor",
@@ -1453,6 +1468,14 @@
       "id": "a24",
       "name": "Armor of Valor",
       "image": "ARMOR_PLATE_AVALON",
+      "type": "armor",
+      "category": "plate armor",
+      "usage": "CD"
+    },
+        {
+      "id": "a27",
+      "name": "Fey Armor",
+      "image": "ARMOR_PLATE_FEY",
       "type": "armor",
       "category": "plate armor",
       "usage": "CD"
