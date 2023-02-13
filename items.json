@@ -1425,7 +1425,7 @@
       "type": "armor",
       "category": "cloth robe"
     },
-        {
+    {
       "id": "a26",
       "name": "Feyscale Robe",
       "image": "ARMOR_CLOTH_FEY",
@@ -1493,7 +1493,7 @@
       "category": "plate armor",
       "usage": "CD"
     },
-        {
+    {
       "id": "a27",
       "name": "Duskweaver Armor",
       "image": "ARMOR_PLATE_FEY",
