@@ -1274,7 +1274,7 @@
       "name": "Feyscale Hat",
       "image": "HEAD_CLOTH_FEY",
       "type": "helmet",
-      "category": "leather hood"
+      "category": "cloth cowl"
     },
     {
       "id": "h26",
@@ -1288,7 +1288,7 @@
       "name": "Duskweaver Helmet",
       "image": "HEAD_PLATE_FEY",
       "type": "helmet",
-      "category": "leather hood"
+      "category": "plate helmet"
     }
   ],
   "armor": [
