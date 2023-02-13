@@ -1690,6 +1690,30 @@
       "type": "shoe",
       "category": "plate boots",
       "usage": "CD"
+    },
+     {
+      "id": "s25,
+      "name": "Mistwalker Shoes",
+      "image": "SHOES_LEATHER_FEY",
+      "type": "shoe",
+      "category": "leather shoes",
+      "usage": "CD"
+    },
+    {
+      "id": "s26,
+      "name": "Feyscale Sandals",
+      "image": "SHOES_CLOTH_FEY",
+      "type": "shoe",
+      "category": "cloth sandals",
+      "usage": "CD"
+    },
+    {
+      "id": "s27",
+      "name": "Duskweaver Boots",
+      "image": "SHOES_PLATE_FEY",
+      "type": "shoe",
+      "category": "plate boots",
+      "usage": "CD"
     }
   ],
   "cape": [
